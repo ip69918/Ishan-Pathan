@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    image: recidivism-image:latest
+    volumes:
+      - ./:/app/
+    command: ["python", "data.py"]
